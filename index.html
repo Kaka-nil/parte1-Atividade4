@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte1</title>
+</head>
+<body>
+     
+    <input type="text" id="nomeInput" placeholder=" Digite o seu nome " />
+    <button onclick="saudar()">Enviar</button>
+
+    <p id="mensagem"></p>
+
+    <script>
+        function saudar() {
+            const nome = document.getElementById('nomeInput').value
+            const mensagem = `Bem vindo ${nome}`
+            document.getElementById('mensagem').textContent = mensagem
+        }
+    </script>
+</body>
+</html>
